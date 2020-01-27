@@ -29,6 +29,7 @@ export const DivWrapper = styled.div`
   margin: 0;
   display: flex;
   background-color: aliceblue;
+  
 `;
 export const HeaderLink = styled(Link)`
   color: black;

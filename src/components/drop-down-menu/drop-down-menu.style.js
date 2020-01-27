@@ -17,32 +17,32 @@ const SpanProps = span => {
 };
 const Span = styled.span`
   position: relative;
+  display: inline-block;
   animation-name: ${({ span }) => SpanProps(span)};
   animation-duration: 5s;
- 
 `;
 export const DropDownWrapper = styled.div`
-  width: 50%;
-  margin: 0 auto;
-  postion:relative
- 
+  overflow: hidden;
+  height: 100%;
+  margin-top:25vh;
 `;
 
 export const DropDownInnerContent = styled.p`
-  font-size: 26px;
+
+  width: 50%;
+  margin: 0 auto;
+  font-size: 2.5vh;
+  text-align: center;
+  
 `;
 export const Left = styled(Span)`
   color: blue;
   @keyframes Left {
     from {
-
-      left: 200vw;
-      background-color: yellow;
+      left: 110vw;
     }
     to {
-     
-      left:0
-      background-color: blue;
+      left: 0;
     }
   }
 `;
@@ -50,12 +50,10 @@ export const Right = styled(Span)`
   color: red;
   @keyframes Right {
     from {
-      top: 100vh;
-      background-color: yellow;
+      right: 100vw;
     }
     to {
-      top: 0vh;
-    
+      right: 0;
     }
   }
 `;
@@ -64,11 +62,9 @@ export const Bottom = styled(Span)`
   @keyframes Bottom {
     from {
       top: 100vh;
-      background-color: yellow;
     }
     to {
-      top: 0vh;
-      background-color: blue;
+      top: 0;
     }
   }
 `;

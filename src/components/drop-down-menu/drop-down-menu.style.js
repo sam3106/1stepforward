@@ -4,13 +4,11 @@ const SpanProps = span => {
   switch (span) {
     case "Left":
       return "Left";
-      break;
     case "Right":
       return "Right";
-      break;
     case "Bottom":
       return "Bottom";
-      break;
+
     default:
       return null;
   }
@@ -22,18 +20,23 @@ const Span = styled.span`
   animation-duration: 5s;
 `;
 export const DropDownWrapper = styled.div`
-  overflow: hidden;
-  height: 100%;
-  margin-top:25vh;
+
+background-image: url(https://storage.needpix.com/rsynced_images/stairs-1689804_1280.jpg);
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
 `;
 
 export const DropDownInnerContent = styled.p`
-
-  width: 50%;
-  margin: 0 auto;
-  font-size: 2.5vh;
-  text-align: center;
-  
+    width: 50%;
+    margin: 0 auto;
+    font-size: 3.5vh;
+    text-align: center;
+    position: relative;
+    top: 20vh;
 `;
 export const Left = styled(Span)`
   color: blue;

@@ -1,9 +1,9 @@
 import React from "react";
-import { Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import { DropDownMenu } from "./components/drop-down-menu/drop-down-menu";
 import "./app.css";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SignInSignUp from "./pages/sign-in-sign-up/sign-in-sign-up";
 class App extends React.Component {
   constructor() {
     super();
@@ -12,10 +12,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
-          <Header />
-          <DropDownMenu />
-        </div>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={DropDownMenu} />
+
+          <Route exact path="/sign-in-sign-up" component={SignInSignUp} />
+        </Switch>
       </div>
     );
   }

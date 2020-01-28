@@ -17,7 +17,7 @@ const handleDisplay = display => {
       return "right";
   }
 };
-const handlePadding = (padding) => {
+const handlePadding = padding => {
   switch (padding) {
     case "Right":
       return 7 + "px";
@@ -25,21 +25,19 @@ const handlePadding = (padding) => {
 };
 
 export const DivWrapper = styled.div`
-  height: 10vh;
+  padding: 2.5vh 0;
   margin: 0;
   display: flex;
   background-color: aliceblue;
-  
 `;
 export const HeaderLink = styled(Link)`
   color: black;
-  font-size: ${({ sides }) => handleSize(sides)};
-  text-align: ${({ sides }) => handleDisplay(sides)};
+  font-size: ${({ side }) => handleSize(side)};
+  text-align: ${({ side }) => handleDisplay(side)};
   font-weight: bolder;
   width: 50%;
   margin: 0 auto;
   font-family: "Bangers", cursive;
-  display: flow-right;
   text-decoration: none;
-  padding: ${({ sides }) => handlePadding(sides)};
+  padding: ${({ side }) => handlePadding(side)};
 `;

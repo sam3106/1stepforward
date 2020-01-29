@@ -20,7 +20,7 @@ const handleDisplay = display => {
 const handlePadding = padding => {
   switch (padding) {
     case "Right":
-      return 7 + "px";
+      return .5 + "vh"+ " " + 0 ;
   }
 };
 

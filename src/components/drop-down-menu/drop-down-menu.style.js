@@ -24,7 +24,6 @@ export const DropDownWrapper = styled.div`
 background-image: url(https://storage.needpix.com/rsynced_images/stairs-1689804_1280.jpg);
     width: 100%;
     height: 95vh;
-    overflow: hidden;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: hidden;

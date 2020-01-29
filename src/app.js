@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header/Header";
 import { DropDownMenu } from "./components/drop-down-menu/drop-down-menu";
 import "./app.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import SignInSignUp from "./pages/sign-in-sign-up/sign-in-sign-up";
 class App extends React.Component {
   constructor() {

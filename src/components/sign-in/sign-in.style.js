@@ -5,3 +5,11 @@ export const Wrapper = styled.div`
   width: 50%;
   flex-direction: column;
 `;
+
+export const CustomButton = styled.button`
+
+
+
+
+
+`

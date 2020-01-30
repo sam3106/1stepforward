@@ -32,6 +32,8 @@ class SignUp extends React.Component {
           Confirm Password:
           <br />
           <input type="password" name="confirmPassword" />
+          <br /> <br />
+          <input type="submit" value="Submit" />
         </form>
       </Wrapper>
     );

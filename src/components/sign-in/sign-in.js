@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper } from "./sign-in.style";
+import { Wrapper, CustomButton } from "./sign-in.style";
 class SignIn extends React.Component {
   constructor() {
     super();
@@ -19,6 +19,11 @@ class SignIn extends React.Component {
           Password:
           <br />
           <input type="password" name="password" />
+          <br /> <br />
+          <div>
+            <input type="submit" value="Submit" />
+            <CustomButton>Google Sign In</CustomButton>
+          </div>
         </form>
       </Wrapper>
     );
